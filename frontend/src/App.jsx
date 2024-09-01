@@ -4,7 +4,7 @@ import { io } from "socket.io-client";
 
 function App() {
   // Initialize the socket connection only once using useMemo
-  const socket = useMemo(() => io("http://localhost:3000"), []);
+  const socket = useMemo(() => io("https://chatapp-4401.onrender.com"), []);
 
   const [msginput, setmsginput] = useState("");
   const [msg, setmsg] = useState([]);
