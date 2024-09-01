@@ -1,0 +1,91 @@
+.chat-box {
+    width: 20%;
+    height: 360px;
+    border-radius: 5px;
+    border: 1px solid;
+    box-shadow: 0px 0px 2px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    padding: 10px;
+    background-color: ghostwhite;
+}
+@media only screen and (max-width:600px) {
+    .chat-box{
+        width: 90%;
+        height: 600px;
+    }
+}
+.chat-box-heading
+{
+    text-align: center;
+    height: 5%;
+    width: 100%;
+    color: gray;
+    font-size: 12px;
+    margin-top: 2px;
+}
+.chat-box-chats{
+    width: 100%;
+    height: 100%;
+}
+.chats-chat-box{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 85%;
+    width: 100%;
+    background-color: ghostwhite;
+}
+.input-chat-box{
+    width: 100%;
+    height: 5%;
+    margin-top: 8px;
+}
+.input-chat-box input{
+    width: 80%;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px 0px 0px 5px;
+}
+.input-chat-box button{
+    padding: 5px;
+    width: 16%;
+    border: 1px solid gray;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    background-color: rgb(234, 250, 211);
+}
+.input-chat-box button:active{
+    background-color: rgb(255, 234, 234);
+    color: black;
+}
+
+
+/* chats */
+.chats-chat-box span{
+    background-color: rgb(249, 243, 236);
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+.user-chats,.otheruser-chats,.newuser-chats{
+    width: 90%;
+    display: flex;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    align-items: center;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.user-chats{
+    justify-content: right;
+}
+.otheruser-chats{
+    justify-content: left;
+}
+.newuser-chats{
+    justify-content: center;
+}
