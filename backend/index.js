@@ -6,7 +6,7 @@ import { createServer } from "http";
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:5173', // Ensure this is the correct frontend URL
+    origin: 'https://chatapp-nine-sandy.vercel.app', // Ensure this is the correct frontend URL
     credentials: true
 }));
 
@@ -14,7 +14,7 @@ const server = createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:5173", // Allow requests from the frontend
+        origin: "https://chatapp-nine-sandy.vercel.app", // Allow requests from the frontend
         methods: ["GET", "POST"],
         credentials: true
     }
